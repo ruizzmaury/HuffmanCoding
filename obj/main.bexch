@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\practica2.gpr
+20210502161256
+[BOUND OBJECT FILES]
+C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\d_conjunto.o
+C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\d_priority_queue.o
+C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\darbolbinario.o
+C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LC:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\
+-LC:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\
+-LC:/gnat/2019/lib/gcc/x86_64-pc-mingw32/8.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2019/lib/gcc/x86_64-pc-mingw32/8.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

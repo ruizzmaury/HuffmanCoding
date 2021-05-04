@@ -1,0 +1,68 @@
+V "GNAT Lib v2019"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U darbolbinario%b	darbolbinario.adb	1f26993a NE OO PK GE IL
+
+U darbolbinario%s	darbolbinario.ads	5add0a4a BN EE NE OO PK GE IL
+
+D darbolbinario.ads	20210504210312 5add0a4a darbolbinario%s
+D darbolbinario.adb	20210504210314 45fb9370 darbolbinario%b
+D system.ads		20190518041258 32a08138 system%s
+G a e
+G c Z s b [darbolbinario standard 3 9 none]
+X 1 darbolbinario.ads
+2+9 elem 9r59 10r39 17r10 2|14r58 26r39
+3k9*darbolbinario 2z9 14E9 23l5 23e18 2|1b14 52l5 52t18
+4R9*arbol 7r29 8r30 9r28 9r46 10r25 11r25 11r40 12r25 12r40 20c9 22e14 2|3r28
+. 8r30 14r27 14r45 26r25 34r24 34r39 43r24 43r39
+5X4*mal_uso 2|31r38 40r38 49r38
+6X4*espacio_desbordado 2|22r35
+7U14*avacio 7<22 2|3b14 7l8 7t14
+7r22 t{4R9} 2|3b21 4m24 4r24
+8V13*esta_vacio{boolean} 8>24 2|8b13 12l8 12t18
+8r24 t{4R9} 2|8b24 9r24
+9U14*graft 9<21 9>35 9>39 9>53 2|14b14 23l8 23t13
+9r21 t{4R9} 2|14b20 15m24 15r24
+9r35 lt{4R9} 2|14b34 16r25
+9r39 rt{4R9} 2|14b38 17r25
+9*53 x{2+9} 2|14b52 20r16
+10U14*raiz 10>19 10<32 2|26b14 32l8 32t12
+10r19 t{4R9} 2|26b19 27r24
+10*32 x{2+9} 2|26b32 29m7
+11U14*izq 11>19 11<32 2|34b14 41l8 41t11
+11r19 t{4R9} 2|34b18 35r24
+11r32 lt{4R9} 2|34b31 36m25 36r25
+12U14*der 12>19 12<32 2|43b14 50l8 50t11
+12r19 t{4R9} 2|43b18 44r24
+12r32 rt{4R9} 2|43b31 45m25 45r25
+14R9 nodo 15r25 16c9 19e14 2|19r15
+15P9 pnodo(14R9) 18r13 21r13 2|4r10 9r10 15r10 16r11 17r11 27r10 35r10 36r11
+. 44r10 45r11
+17*7 x{2+9} 2|29r13
+18p7 l{15P9} 2|38r14
+18p10 r{15P9} 2|47r14
+21p7 raiz{15P9} 2|4m26 9m26 15m26 16m28 17m28 27m26 35m26 36m28 44m26 45m28
+X 2 darbolbinario.adb
+4p7 p{1|15P9} 6r7
+9p7 p{1|15P9} 11r14
+15p7 p{1|15P9} 19r7 20r7
+16p7 pl{1|15P9} 20r19
+17p7 pr{1|15P9} 20r23
+27p7 p{1|15P9} 29r11
+35p7 p{1|15P9} 38r12
+36p7 pl{1|15P9} 38r7
+44p7 p{1|15P9} 47r12
+45p7 pr{1|15P9} 47r7
+

@@ -1,0 +1,175 @@
+V "GNAT Lib v2019"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
+RV SPARK_05
+
+U main%b		main.adb		49313ccd NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W d_conjunto%s		d_conjunto.adb		d_conjunto.ali
+W d_priority_queue%s	d_priority_queue.adb	d_priority_queue.ali
+W darbolbinario%s	darbolbinario.adb	darbolbinario.ali
+Z interfaces%s		interfac.ads		interfac.ali
+Z system%s		system.ads		system.ali
+Z system.exception_table%s  s-exctab.adb	s-exctab.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
+
+D ada.ads		20190518041256 76789da1 ada%s
+D a-except.ads		20190518041256 291912d5 ada.exceptions%s
+D a-inteio.ads		20190518041258 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20190518041256 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20190518041256 119b8fb3 ada.streams%s
+D a-tags.ads		20190518041258 491b781d ada.tags%s
+D a-textio.ads		20190518041258 aef4d56d ada.text_io%s
+D a-tiinio.ads		20190518041256 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20190518041256 0e9b276f ada.unchecked_conversion%s
+D d_conjunto.ads	20210503174332 e5cf9cb9 d_conjunto%s
+D d_conjunto.adb	20210503174358 785ec9d7 d_conjunto%b
+D d_priority_queue.ads	20210504215606 07464a0e d_priority_queue%s
+D d_priority_queue.adb	20210504224404 b0b22951 d_priority_queue%b
+D darbolbinario.ads	20210504210312 5add0a4a darbolbinario%s
+D darbolbinario.adb	20210504210314 45fb9370 darbolbinario%b
+D interfac.ads		20190518041256 5ab55268 interfaces%s
+D i-cstrea.ads		20190518041256 e53d8b8e interfaces.c_streams%s
+D main.adb		20210504225328 a9dabcf9 main%b
+D system.ads		20190518041258 32a08138 system%s
+D s-crtl.ads		20190518041256 0ebbdb71 system.crtl%s
+D s-exctab.ads		20190518041256 54135002 system.exception_table%s
+D s-ficobl.ads		20190518041258 078245e4 system.file_control_block%s
+D s-parame.ads		20190518041258 48ec542b system.parameters%s
+D s-secsta.ads		20190518041258 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20190518041256 a7318a92 system.soft_links%s
+D s-stache.ads		20190518041258 a37c21ec system.stack_checking%s
+D s-stalib.ads		20190518041258 09bd3940 system.standard_library%s
+D s-stoele.ads		20190518041258 2dc34a04 system.storage_elements%s
+D s-traent.ads		20190518041256 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20190518041256 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20190518041256 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 7 11 none]
+G r i none [main standard 7 11 none] [d_conjunto standard 5 9 none]
+G r i none [main standard 7 11 none] [darbolbinario standard 3 9 none]
+G r i none [main standard 7 11 none] [d_priority_queue standard 10 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 18|1r6 1r31 2r6 2r31
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 18|1w10 1r35
+X 7 a-textio.ads
+57K13*Text_IO 727e16 18|2w10 2r35
+64P9*File_Type 18|44r20 45r20
+66n23*In_File{66E9} 18|156r15
+66n32*Out_File{66E9} 18|82r25
+114U14*Open 18|82s7 156s4
+129U14*Close 18|102s7 166s4
+264U14*New_Line 18|148s10
+312V13*End_Of_File{boolean} 18|160s14
+386U14*Put 18|89s10 92s10
+392U14*Put 18|144s10
+415U14*Get_Immediate 18|161s7
+465U14*Put 18|145s10
+498U14*Put_Line 18|98s10
+X 8 a-tiinio.ads
+68U14*Put 18|95s10[3|18]
+80U14*Put 18|146s10[3|18]
+X 10 d_conjunto.ads
+5k9*d_conjunto 34e15 18|3w6 9r35
+6R9 conjunto 18|43r20[9] 53r61[9] 76r43[9] 108r39[9]
+8R9 iterador 18|54r14[9] 77r14[9] 109r11[9]
+13U14 cvacio 18|157s4[9]
+14U14 poner 18|71s7[9]
+17U14 actualiza 18|65s13[9]
+19U14 primero 18|59s7[9] 83s7[9] 116s7[9]
+20U14 siguiente 18|69s10[9] 100s10[9] 131s10[9]
+21V13 es_valido{boolean} 18|61s13[9] 84s13[9] 118s13[9]
+22U14 obtener 18|62s10[9] 85s10[9] 120s10[9]
+X 12 d_priority_queue.ads
+3i4 size{positive} 18|39r60
+5+9 item 18|39r73
+7V19 "<"{boolean} 18|39r91
+9V19 ">"{boolean} 18|39r105
+10k9*d_priority_queue 25e21 18|4w6 39r42
+11R9 priority_queue 18|48r14[39] 108r59[39] 136r43[39]
+14U14 empty 18|158s4[39]
+15U14 put 18|130s10[39]
+16U14 delete_least 18|147s10[39]
+17V13 get_least{18|19P9} 18|142s25[39]
+18V13 is_empty{boolean} 18|141s17[39]
+X 14 darbolbinario.ads
+2+9 elem 18|17r42
+3k9*darbolbinario 23e18 18|5w6 17r26
+4R9 arbol 18|19r26[17] 121r22[17] 122r27[17]
+7U14 avacio 18|123s10[17] 124s10[17]
+9U14 graft 18|129s10[17]
+10U14 raiz 18|25s7[17] 26s7[17] 34s7[17] 35s7[17] 143s10[17]
+10r32 x{18|12R9} 18|143r32[17]
+X 18 main.adb
+7U11*Main 7b11 175l5 175t9
+9K12 dConjuntoLetras[10|5] 10r8
+12R9 nodo 15e15 17r51 22r15 23r15 31r15 32r15 112r15 138r20
+13e7 caracter{character} 125m17 144r26
+14i7 frequencia{integer} 27r20 27r39 36r20 36r39 126m17 146r26
+17K12 darbre[14|3] 18r8
+19P9 parbol(14|4R9[17]) 21r30 30r30 39r81 110r13 111r18 137r21
+21V13 menor{boolean} 21b13 21>19 21>22 28l8 28t13 39r97
+21p19 x1{19P9} 25r12
+21p22 x2{19P9} 26r12
+22r7 node1{12R9} 25m20 27r14
+23r7 node2{12R9} 26m20 27r33
+30V13 major{boolean} 30b13 30>19 30>22 37l8 37t13 39r111
+30p19 x1{19P9} 34r12
+30p22 x2{19P9} 35r12
+31r7 node1{12R9} 34m20 36r14
+32r7 node2{12R9} 35m20 36r33
+39K12 d_priority_queue_arbol[12|10] 40r8
+43r4 mainSet{10|6R9[9]} 157m11 163m31 163r31 168m21 168r21 171m17 171r17
+44p4 File{7|64P9} 156m9 156r9 160r27 161r21 166m10 166r10
+45p4 File_Salida{7|64P9} 82m12 82r12 89r14 92r14 95r14 98r19 102m13 102r13
+46a4 File_Name{string} 156r24
+47e4 caracter{character} 161m27 163m21 163r21
+48r4 pr_queue{12|11R9[39]} 158m10 171m26 171r26 173m23 173r23
+53U14 buscaCaracter 53b14 53=28 53=49 73l8 73t21 163s7
+53e28 c{character} 63r27 71r18
+53r49 set{10|6R9[9]} 59r15 62r18 65m23 69r20 71m13
+54r7 it{10|8R9[9]} 59m20 61r23 62r23 69m25 69r25
+55e7 currentChar{character} 62m27 63r13 65r28
+56i7 charFreq{integer} 62m40 65r41
+76U14 guardaCaracteres 76b14 76=31 103l8 103t24 168s4
+76r31 set{10|6R9[9]} 83r15 85r18 100r20
+77r7 it{10|8R9[9]} 83m20 84r23 85r23 100m25 100r25
+78e7 currentChar{character} 85m27 89r27
+79i7 charFreq{integer} 85m40 95r27
+80a7 File_Name{string} 82r35
+108U14 recorrerFreq 108b14 108=27 108=49 133l8 133t20 171s4
+108r27 set{10|6R9[9]} 116r15 120r18 131r20
+108r49 q{12|11R9[39]} 130m14
+109r7 it{10|8R9[9]} 116m20 118r23 120r23 131m25 131r25
+110p7 tree{19P9} 121m10 123r17 129r16 130r17
+111p7 emptyTree{19P9} 122m10 124r17 129r26 129r41
+112r7 pareja{12R9} 125m10 126m10 129r56
+113e7 clave{character} 120m27 125r29
+114i7 valorFreq{integer} 120m34 126r31
+136U14 extraerArbolesCola 136b14 136=33 152l8 152t26 173s4
+136r33 q{12|11R9[39]} 141r26 142r35 147m23
+137p7 currentTree{19P9} 142m10 143r15
+138r7 currentPair{12R9} 143m37 144r14 146r14
+
