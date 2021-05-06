@@ -49,4 +49,19 @@ package body darbolbinario is
       when constraint_error => raise mal_uso;
    end der;
    
+   
+   function existe_izq(tree: in arbol) return boolean is
+   h_izq: arbol;
+   begin
+      izq(tree, h_izq);
+      return esta_vacio(h_izq);
+   end existe_izq;
+   
+   function existe_der(tree: in arbol) return boolean is
+   h_der: arbol;
+   begin
+      der(tree, h_der);
+      return esta_vacio(h_der);
+   end existe_der;
+   
 end darbolbinario;

@@ -31,6 +31,7 @@ package body ada_main is
    E135 : Short_Integer; pragma Import (Ada, E135, "d_conjunto_E");
    E137 : Short_Integer; pragma Import (Ada, E137, "d_priority_queue_E");
    E139 : Short_Integer; pragma Import (Ada, E139, "darbolbinario_E");
+   E141 : Short_Integer; pragma Import (Ada, E141, "dcola_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -205,6 +206,7 @@ package body ada_main is
       E135 := E135 + 1;
       E137 := E137 + 1;
       E139 := E139 + 1;
+      E141 := E141 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -243,6 +245,7 @@ package body ada_main is
    --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\d_conjunto.o
    --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\d_priority_queue.o
    --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\darbolbinario.o
+   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\dcola.o
    --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\main.o
    --   -LC:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\
    --   -LC:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\

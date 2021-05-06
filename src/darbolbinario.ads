@@ -10,6 +10,10 @@ package darbolbinario is
    procedure raiz(t: in arbol; x: out elem);
    procedure izq (t: in arbol; lt: out arbol);
    procedure der (t: in arbol; rt: out arbol);
+
+   -- metodos comprobacion de si tiene hijos
+   function existe_izq(tree: in arbol) return boolean;
+   function existe_der(tree: in arbol) return boolean;
 private
    type nodo;
    type pnodo is access nodo;

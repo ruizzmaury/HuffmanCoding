@@ -79,5 +79,7 @@ package body d_conjunto is
       k:= it.k;
       x:= c(k);
    end obtener;
+
+   
    
 end d_conjunto;

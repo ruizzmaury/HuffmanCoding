@@ -15,7 +15,7 @@ U d_conjunto%b		d_conjunto.adb		9d91556e NE OO PK GE IL
 U d_conjunto%s		d_conjunto.ads		e5cf9cb9 BN EE NE OO PK GE IL
 
 D d_conjunto.ads	20210503174332 e5cf9cb9 d_conjunto%s
-D d_conjunto.adb	20210503174358 785ec9d7 d_conjunto%b
+D d_conjunto.adb	20210506173518 785ec9d7 d_conjunto%b
 D system.ads		20190518041258 32a08138 system%s
 G a e
 G c Z s b [d_conjunto standard 5 9 none]
@@ -23,7 +23,7 @@ X 1 d_conjunto.ads
 3E9 key 14r47 15r46 16r47 17r50 22r62 24r29 25r28 31r10 2|7r16 10r46 18r46
 . 27r47 34r50 46r10 49r11 50r30 50r48 56r11 60r14 61r14 62r33 62r52 73r62
 4+9 item 14r58 15r58 17r61 22r74 25r36 2|10r57 18r58 34r61 74r24
-5k9*d_conjunto 3z9 4z9 24E9 34l5 34e15 2|2b14 83l5 83t15
+5k9*d_conjunto 3z9 4z9 24E9 34l5 34e15 2|2b14 85l5 85t15
 6R9*conjunto 13r29 14r31 15r30 16r31 17r34 19r31 20r31 22r28 26c9 29e14 2|4r28
 . 10r30 18r30 27r31 34r34 44r28 54r30 73r28
 8R9*iterador 19r50 20r53 21r31 22r45 30c9 33e14 2|44r47 54r52 68r30 73r45

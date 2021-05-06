@@ -3,6 +3,7 @@ with Ada.Text_IO;         use Ada.Text_IO;
 with d_conjunto;
 with d_priority_queue;
 with darbolbinario;
+with dcola;
 
 procedure Main is
 
@@ -40,16 +41,22 @@ procedure Main is
    use d_priority_queue_arbol;
 
 
+   package dcolaPareja is new dcola(parbol);
+   use dcolaPareja;
+   type pcola is access cola ;
+
    mainSet    :    conjunto;
    File       :    File_Type;
    File_Salida:    File_Type;
    File_Name  :    constant String := "entrada.txt";
    caracter   :    Character;
-   pr_queue: priority_queue;
+   pr_queue   : priority_queue;
+   mainTree   : parbol;
 
 
-
-
+   -- procedimiento que busca el caracter en el conjunto
+   -- en el caso de que no exista pondríamos su frecuencia a 1
+   -- si ya existe simplemente incrementamos su frecuencia
    procedure buscaCaracter(c: in out Character; set: in out conjunto)  is
       it:    iterador;
       currentChar: Character;  -- key
@@ -73,6 +80,8 @@ procedure Main is
    end buscaCaracter;
 
 
+   -- procedimiento que se encarga de guardar en fichero de texto "entrada_freq.txt"
+   -- las parejas clave-valor que se encuentran en el conjunto
    procedure guardaCaracteres(set: in out conjunto) is
       it:    iterador;
       currentChar: Character; -- key
@@ -102,16 +111,18 @@ procedure Main is
       Close(File_Salida);
    end guardaCaracteres;
 
-   --recorre el conjunto mediante un iterador , creamos un arbol para cada pareja
-   --de llave-valor mediante la funcion graft y lo insertamos en la cola de prioridad
-   --con put(cola,elemento)
+
+
+   -- recorre el cojunto usando iterador, se crea mediante procedimiento graft
+   -- arbol para cada pareja clave-valor y se inserta en cola prioridad
+   -- usando procedimiento put
    procedure recorrerFreq(set: in out conjunto; q: in out priority_queue) is
       it: iterador;
-      tree: parbol;
+      tree: parbol; -- elemento que se añadirá en cola prioridad
       emptyTree: parbol;
       pareja: nodo; -- Pareja clave-valor
-      clave: Character;
-      valorFreq: Integer;
+      clave: Character;   -- variable que contendrá caracter
+      valorFreq: Integer; -- variable que contendrá frecuencia caracter
    begin
       primero(set, it);
 
@@ -133,14 +144,16 @@ procedure Main is
    end recorrerFreq;
 
 
+   -- procedimiento que extrae de la cola prioridad cada una de
+   -- las parejas clave-valor y las printea por consola
    procedure extraerArbolesCola(q: in out priority_queue) is
       currentTree : parbol; -- el nodo arbol
       currentPair: nodo;
    begin
 
-      while not is_empty(q) loop
+      while not is_empty(q) loop -- mientras la cola no esté vacía
          currentTree := get_least(q);
-         raiz(currentTree.all, x => currentPair);
+         raiz(currentTree.all, currentPair);
          Put(currentPair.caracter);
          Put(": ");
          Put(currentPair.frequencia);
@@ -151,11 +164,115 @@ procedure Main is
 
    end extraerArbolesCola;
 
+
+   -- procedimiento de creación del Árbol Huffman extrayendo
+   -- los elementos de la cola de prioridad
+   function creacionArbolHuffman(q: in out priority_queue) return parbol is
+      t1: parbol;
+      t2: parbol;
+
+      t1_pair: nodo;
+      t2_pair: nodo;
+
+      arbolUnion: parbol;
+      arbolUnion_pair: nodo;
+
+   begin
+      -- comprobamos si la cola prioridad tiene dos o más elementos
+
+      while not is_empty(q) loop
+         -- extraemos elemento con más prioridad
+
+         t1 := get_least(q);
+         raiz(t1.all, t1_pair);
+         delete_least(q); -- eliminamos elemento extraido
+
+
+         -- si sigue sin estar vacía
+         if not is_empty(q) then
+            -- Contenia dos elementos (o mas )
+
+            -- extraemos segundo elemento que es ahora el elemento con + prioridad
+
+            t2 := get_least(q);
+            delete_least(q);
+
+            raiz(t2.all, t2_pair);
+
+            -- inicializamos nuevo arbolUnion con la suma
+            -- de los extraídos previamente
+            arbolUnion:= new arbol;
+
+            -- creamos el elem clave-valor del nuevo arbol  ----------------
+            arbolUnion_pair.caracter := '-'; -- caracter vacío
+
+            -- frecuencia del elem de la raiz del nuevo arbol será la suma
+            -- de las frecuencias de los dos nodos extraídos
+            arbolUnion_pair.frequencia := t1_pair.frequencia + t2_pair.frequencia;
+
+
+            graft(arbolUnion.all, t1.all, t2.all, arbolUnion_pair);
+            ----------------------------------------------------------------
+
+            put(q, arbolUnion); -- Insertar el nuevo árbol en el heap.
+
+
+         end if;
+
+
+      end loop;
+
+      return t1;
+   end creacionArbolHuffman;
+
+
+   -- procedimiento que se encarga de realizar el recorrido
+   -- en amplitud del árbol huffman creado con anterioridad
+   procedure recorridoAmplitud(mainTree : in out parbol) is
+      raizT_aux: parbol;
+      raizT_izq: parbol;
+      raizT_der: parbol;
+      pareja: nodo;
+      nodosPendientes: cola;
+   begin
+      cvacia(nodosPendientes);
+
+      if not esta_vacio(mainTree.all) then
+         -- extraemos raiz del árbol
+
+         poner(nodosPendientes, mainTree);
+         raizT_aux := new arbol;
+
+         while not esta_vacia(nodosPendientes) loop
+            raizT_aux := coger_primero(nodosPendientes);
+            raiz(raizT_aux.all, pareja);
+            raizT_izq := new arbol;
+            izq(raizT_aux.all, raizT_izq.all);
+            Put(pareja.caracter);
+            Put(": ");
+            Put(pareja.frequencia);
+            New_Line;
+
+            if not esta_vacio(raizT_izq.all) then
+               poner(nodosPendientes, raizT_izq);
+               raizT_der := new arbol;
+               der(raizT_aux.all, raizT_der.all);
+               poner(nodosPendientes, raizT_der);
+
+            end if;
+            borrar_primero(nodosPendientes);
+         end loop;
+
+      end if;
+
+   end recorridoAmplitud;
+
+
 begin
    --  Insert code here.
    Open(File, In_File, File_Name);
    cvacio(mainSet); -- inicializamos conjunto
-   empty(pr_queue);
+   empty(pr_queue); -- inicializamos cola prioridad
    -- introducimos todos los caracteres del fichero en el conjunto
    while not End_Of_File (File) loop -- mientras no final de fichero
       Get_Immediate(File, caracter); -- leemos caracter
@@ -170,7 +287,13 @@ begin
 
    recorrerFreq(mainSet, pr_queue);
 
-   extraerArbolesCola(pr_queue);
+   -- extraerArbolesCola(pr_queue);
+
+   -- construímos el árbol de Huffman
+   mainTree := creacionArbolHuffman(pr_queue);
+
+   recorridoAmplitud(mainTree);
+
 
 end Main;
 

@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#49313ccd#;
+   u00001 : constant Version_32 := 16#4ddc7c80#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -311,14 +311,18 @@ package ada_main is
    pragma Export (C, u00136, "d_priority_queueB");
    u00137 : constant Version_32 := 16#07464a0e#;
    pragma Export (C, u00137, "d_priority_queueS");
-   u00138 : constant Version_32 := 16#1f26993a#;
+   u00138 : constant Version_32 := 16#0348914f#;
    pragma Export (C, u00138, "darbolbinarioB");
-   u00139 : constant Version_32 := 16#5add0a4a#;
+   u00139 : constant Version_32 := 16#2fd4a946#;
    pragma Export (C, u00139, "darbolbinarioS");
-   u00140 : constant Version_32 := 16#e31b7c4e#;
-   pragma Export (C, u00140, "system__memoryB");
-   u00141 : constant Version_32 := 16#6bdde70c#;
-   pragma Export (C, u00141, "system__memoryS");
+   u00140 : constant Version_32 := 16#610978d3#;
+   pragma Export (C, u00140, "dcolaB");
+   u00141 : constant Version_32 := 16#d49d8a9d#;
+   pragma Export (C, u00141, "dcolaS");
+   u00142 : constant Version_32 := 16#e31b7c4e#;
+   pragma Export (C, u00142, "system__memoryB");
+   u00143 : constant Version_32 := 16#6bdde70c#;
+   pragma Export (C, u00143, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -461,6 +465,8 @@ package ada_main is
    --  d_priority_queue%b
    --  darbolbinario%s
    --  darbolbinario%b
+   --  dcola%s
+   --  dcola%b
    --  main%b
    --  END ELABORATION ORDER
 
