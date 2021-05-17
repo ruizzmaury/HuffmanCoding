@@ -13,21 +13,20 @@ RV NO_STANDARD_STORAGE_POOLS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U darbolbinario%b	darbolbinario.adb	0348914f NE OO PK GE IL
+U darbolbinario%b	darbolbinario.adb	76413243 NE OO PK GE IL
 
-U darbolbinario%s	darbolbinario.ads	2fd4a946 BN EE NE OO PK GE IL
+U darbolbinario%s	darbolbinario.ads	5add0a4a BN EE NE OO PK GE IL
 
-D darbolbinario.ads	20210506173600 2fd4a946 darbolbinario%s
+D darbolbinario.ads	20210511193328 5add0a4a darbolbinario%s
 D darbolbinario.adb	20210506173646 2c9c3809 darbolbinario%b
 D system.ads		20190518041258 32a08138 system%s
 G a e
 G c Z s b [darbolbinario standard 3 9 none]
 X 1 darbolbinario.ads
-2+9 elem 9r59 10r39 21r10 2|14r58 26r39
-3k9*darbolbinario 2z9 18E9 27l5 27e18 2|1b14 67l5 67t18
-4R9*arbol 7r29 8r30 9r28 9r46 10r25 11r25 11r40 12r25 12r40 15r33 16r33 24c9
-. 26e14 2|3r28 8r30 14r27 14r45 26r25 34r24 34r39 43r24 43r39 53r33 54r11
-. 60r33 61r11
+2+9 elem 9r59 10r39 18r10 2|14r58 26r39
+3k9*darbolbinario 2z9 15E9 24l5 24e18 2|1b14 67l5 67t18
+4R9*arbol 7r29 8r30 9r28 9r46 10r25 11r25 11r40 12r25 12r40 21c9 23e14 2|3r28
+. 8r30 14r27 14r45 26r25 34r24 34r39 43r24 43r39 53r33 54r11 60r33 61r11
 5X4*mal_uso 2|31r38 40r38 49r38
 6X4*espacio_desbordado 2|22r35
 7U14*avacio 7<22 2|3b14 7l8 7t14
@@ -48,28 +47,28 @@ X 1 darbolbinario.ads
 12U14*der 12>19 12<32 2|43b14 50l8 50t11 63s7
 12r19 t{4R9} 2|43b18 44r24
 12r32 rt{4R9} 2|43b31 45m25 45r25
-15V13*existe_izq{boolean} 15>24 2|53b13 58l8 58t18
-15r24 tree{4R9} 2|53b24 56r11
-16V13*existe_der{boolean} 16>24 2|60b13 65l8 65t18
-16r24 tree{4R9} 2|60b24 63r11
-18R9 nodo 19r25 20c9 23e14 2|19r15
-19P9 pnodo(18R9) 22r13 25r13 2|4r10 9r10 15r10 16r11 17r11 27r10 35r10 36r11
+15R9 nodo 16r25 17c9 20e14 2|19r15
+16P9 pnodo(15R9) 19r13 22r13 2|4r10 9r10 15r10 16r11 17r11 27r10 35r10 36r11
 . 44r10 45r11
-21*7 x{2+9} 2|29r13
-22p7 l{19P9} 2|38r14
-22p10 r{19P9} 2|47r14
-25p7 raiz{19P9} 2|4m26 9m26 15m26 16m28 17m28 27m26 35m26 36m28 44m26 45m28
+18*7 x{2+9} 2|29r13
+19p7 l{16P9} 2|38r14
+19p10 r{16P9} 2|47r14
+22p7 raiz{16P9} 2|4m26 9m26 15m26 16m28 17m28 27m26 35m26 36m28 44m26 45m28
 X 2 darbolbinario.adb
-4p7 p{1|19P9} 6r7
-9p7 p{1|19P9} 11r14
-15p7 p{1|19P9} 19r7 20r7
-16p7 pl{1|19P9} 20r19
-17p7 pr{1|19P9} 20r23
-27p7 p{1|19P9} 29r11
-35p7 p{1|19P9} 38r12
-36p7 pl{1|19P9} 38r7
-44p7 p{1|19P9} 47r12
-45p7 pr{1|19P9} 47r7
+4p7 p{1|16P9} 6r7
+9p7 p{1|16P9} 11r14
+15p7 p{1|16P9} 19r7 20r7
+16p7 pl{1|16P9} 20r19
+17p7 pr{1|16P9} 20r23
+27p7 p{1|16P9} 29r11
+35p7 p{1|16P9} 38r12
+36p7 pl{1|16P9} 38r7
+44p7 p{1|16P9} 47r12
+45p7 pr{1|16P9} 47r7
+53V13 existe_izq{boolean} 53b13 53>24 58l8 58t18
+53r24 tree{1|4R9} 56r11
 54r4 h_izq{1|4R9} 56m17 57r25
+60V13 existe_der{boolean} 60b13 60>24 65l8 65t18
+60r24 tree{1|4R9} 63r11
 61r4 h_der{1|4R9} 63m17 64r25
 

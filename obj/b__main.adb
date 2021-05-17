@@ -242,13 +242,13 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\d_conjunto.o
-   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\d_priority_queue.o
-   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\darbolbinario.o
-   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\dcola.o
-   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\main.o
-   --   -LC:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\
-   --   -LC:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\obj\
+   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\obj\d_conjunto.o
+   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\obj\d_priority_queue.o
+   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\obj\darbolbinario.o
+   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\obj\dcola.o
+   --   C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\obj\main.o
+   --   -LC:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\obj\
+   --   -LC:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\obj\
    --   -LC:/gnat/2019/lib/gcc/x86_64-pc-mingw32/8.3.1/adalib/
    --   -static
    --   -lgnat

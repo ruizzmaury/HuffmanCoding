@@ -1,26 +1,32 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2 - copia (2)\practica2.gpr</vfs_file>
-    <file_marker column=" 1" line=" 1" >
-      <vfs_project />
-      <vfs_file>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\src\main.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 19" line=" 8" >
-      <vfs_project />
-      <vfs_file>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\src\darbolbinario.ads</vfs_file>
-    </file_marker>
-    <file_marker column=" 12" line=" 50" >
-      <vfs_project />
-      <vfs_file>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\src\darbolbinario.adb</vfs_file>
-    </file_marker>
-    <file_marker column=" 16" line=" 14" >
-      <vfs_project />
-      <vfs_file>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\src\d_priority_queue.ads</vfs_file>
-    </file_marker>
+  <Project >
     <file_marker current="true" column=" 1" line=" 1" >
-      <vfs_project>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2 - copia (2)\practica2.gpr</vfs_project>
-      <vfs_file>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2 - copia (2)\src\main.adb</vfs_file>
+      <vfs_project>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\practica2.gpr</vfs_project>
+      <vfs_file>C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2_MAURICI_JUANJO\src\main.adb</vfs_file>
+    </file_marker>
+  </Project>
+  <Project >
+    <vfs_file >C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2 - copia (2)\practica2.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1">
+      <vfs_project  />
+      <vfs_file >C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 19" line=" 8">
+      <vfs_project  />
+      <vfs_file >C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\src\darbolbinario.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 12" line=" 50">
+      <vfs_project  />
+      <vfs_file >C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\src\darbolbinario.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 14">
+      <vfs_project  />
+      <vfs_file >C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2\src\d_priority_queue.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1">
+      <vfs_project >C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2 - copia (2)\practica2.gpr</vfs_project>
+      <vfs_file >C:\MAURY\uni\2020\2semestre\EDATOS\ADA_EXER\ENTREGAS\practica2 - copia (2)\src\main.adb</vfs_file>
     </file_marker>
   </Project>
   <Project >
